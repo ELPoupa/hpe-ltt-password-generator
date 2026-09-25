@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="370" height="64" viewBox="0 0 370 64" role="img" aria-label="Get current LTO support code">
+  <rect width="370" height="64" rx="7" fill="#142326"/>
+  <rect x="1" y="1" width="368" height="62" rx="6" fill="none" stroke="#33484c"/>
+  <text x="26" y="39" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#c0f571">Get current LTO support code</text>
+  <path d="M331 25l7 7-7 7m-10-7h16" fill="none" stroke="#c0f571" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

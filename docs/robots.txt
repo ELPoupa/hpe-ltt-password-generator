@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://elpoupa.github.io/hpe-ltt-password-generator/sitemap.xml

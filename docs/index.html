@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HPE L&TT Password Generator — LTO Support Codes</title>
+  <meta name="description" content="Generate current HPE Library & Tape Tools support passwords for L&TT 6.7. Browser generator and offline Python CLI for LTO tape drive maintenance.">
+  <meta name="theme-color" content="#fafafa">
+  <link rel="canonical" href="https://elpoupa.github.io/hpe-ltt-password-generator/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HPE L&TT Password Generator">
+  <meta property="og:description" content="Get a current LTO support code for L&TT 6.7.">
+  <meta property="og:url" content="https://elpoupa.github.io/hpe-ltt-password-generator/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23222'/%3E%3Cpath d='M11 9H7v14h4m10-14h4v14h-4' stroke='%23fff' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css?v=2">
+  <script type="module" src="./app.js?v=2"></script>
+</head>
+<body>
+  <a class="skip-link" href="#generator">Skip to generator</a>
+  <div class="shell">
+    <header>
+      <h1>L&TT 6.7 password generator</h1>
+      <a href="https://github.com/ELPoupa/hpe-ltt-password-generator">GitHub</a>
+    </header>
+    <main id="generator">
+      <section class="generator" aria-label="Support password generator">
+        <div class="result">
+          <div class="code-row">
+            <output id="code" for="start-date" aria-label="Support password" aria-live="polite">Generating…</output>
+            <button id="copy" type="button" disabled><span>Copy</span></button>
+          </div>
+          <p id="validity" class="validity"></p>
+          <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
+          <noscript><p class="error">JavaScript is required. An offline Python version is available on GitHub.</p></noscript>
+        </div>
+        <form id="options" class="options">
+          <div class="date-control">
+            <label for="start-date">Start date</label>
+            <div class="date-row">
+              <input id="start-date" name="start" type="date" min="2000-01-01" required>
+              <button id="today" type="button">Today</button>
+            </div>
+          </div>
+          <fieldset>
+            <legend>Duration</legend>
+            <div class="periods">
+              <label><input type="radio" name="duration" value="20" checked><span>20 days</span></label>
+              <label><input type="radio" name="duration" value="2"><span>2 days</span></label>
+            </div>
+          </fieldset>
+          <p class="error" id="error" role="alert" hidden></p>
+        </form>
+      </section>
+    </main>
+    <footer><a href="https://github.com/ELPoupa/hpe-ltt-password-generator/blob/main/LICENSE">License</a><a href="https://github.com/ELPoupa/hpe-ltt-password-generator/blob/main/NOTICE.md">Notice</a></footer>
+  </div>
+</body>
+</html>
