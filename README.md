@@ -5,7 +5,7 @@ These codes enable support options used when maintaining LTO tape drives, includ
 firmware downgrades, product-ID overrides and manual firmware selection.
 
 <p>
-  <a href="https://elpoupa.github.io/hpe-ltt-password-generator/?v=2">
+  <a href="https://elpoupa.github.io/hpe-ltt-password-generator/?v=3">
     <img src="assets/get-code.svg" width="370" height="64" alt="Get current LTO support code">
   </a>
 </p>
